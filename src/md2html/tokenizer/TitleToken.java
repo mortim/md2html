@@ -1,4 +1,4 @@
-package tokenizer;
+package md2html.tokenizer;
 
 public class TitleToken extends Token {
 	private int size;

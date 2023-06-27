@@ -1,4 +1,4 @@
-package tokenizer;
+package md2html.tokenizer;
 
 public class UnderlineToken extends Token {
 	public UnderlineToken(Token... tokens) {

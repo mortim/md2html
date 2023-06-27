@@ -1,4 +1,4 @@
-package tokenizer;
+package md2html.tokenizer;
 
 public class UnformattedTextToken extends Token {
 	private String msg;
@@ -6,6 +6,10 @@ public class UnformattedTextToken extends Token {
 	public UnformattedTextToken(String msg) {
 		super();
 		this.msg = msg;
+	}
+	
+	public String getMsg() {
+		return this.msg;
 	}
 	
 	public String getSymbol() { return ""; }

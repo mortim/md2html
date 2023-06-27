@@ -1,4 +1,4 @@
-package tokenizer;
+package md2html.tokenizer;
 
 public class QuoteToken extends Token {
 	public QuoteToken(Token... tokens) {

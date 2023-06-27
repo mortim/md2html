@@ -1,4 +1,4 @@
-package tokenizer;
+package md2html.tokenizer;
 
 public abstract class Token {
 	protected Token[] tokens;

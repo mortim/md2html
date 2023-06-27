@@ -1,4 +1,4 @@
-package tokenizer;
+package md2html.tokenizer;
 
 public class NewlineToken extends Token {
 	public String getSymbol() {
@@ -7,6 +7,6 @@ public class NewlineToken extends Token {
 	
 	@Override
 	public String toHTML() {
-		return "</ " + this.getSymbol() + ">";
+		return "<" + this.getSymbol() + ">";
 	}
 }

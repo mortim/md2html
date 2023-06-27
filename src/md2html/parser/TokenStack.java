@@ -1,9 +1,10 @@
-package parser;
+package md2html.parser;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
-import tokenizer.Token;
+
+import md2html.tokenizer.Token;
 
 public class TokenStack {
 	private Stack<Integer> idx;
