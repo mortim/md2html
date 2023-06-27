@@ -13,11 +13,16 @@ public abstract class Token {
 		this.tokens = new Token[]{token};
 	}
 	
-	public Token(Token[] tokens, String[] allowedTypes) throws TokenFormatException {
-		if(!Utils.hasCorrectFormat(tokens, allowedTypes))
-			throw new TokenFormatException(this.getClass().getSimpleName());
-		else
-			this.tokens = tokens;
+	public Token(Token[] tokens) {
+		this.tokens = tokens;
+	}
+	
+	public Token[] getTokens() {
+		return this.tokens;
+	}
+	
+	public void setTokens(Token[] tokens) {
+		this.tokens = tokens;
 	}
 	
 	// Default implementation, can be overrided
@@ -28,7 +33,7 @@ public abstract class Token {
 	// Default implementation, can be overrided
 	@Override
 	public String toString() {
-		return this.getClass().getSimpleName() + "(" + Utils.renderTo(RenderType.AST, this.tokens) + ")";
+		return this.getClass().getSimpleName() + "(" + Utils.renderTo(RenderType.AST, this.tokens);
 	}
 	
 	public abstract String getSymbol();

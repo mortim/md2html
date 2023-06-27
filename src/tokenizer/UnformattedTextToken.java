@@ -17,7 +17,7 @@ public class UnformattedTextToken extends Token {
 	
 	@Override
 	public String toString() {
-		return this.getClass().getSimpleName() + "(\"" + this.msg + "\")";
+		return this.getClass().getSimpleName() + "(\"" + this.msg + "\"), ";
 	}
 
 	

@@ -1,10 +1,8 @@
 package tokenizer;
 
 public class QuoteToken extends Token {
-	private static final String[] ALLOWED_TYPES = {"UnformattedTextToken", "BoldToken", "ItalicToken", "UnderlineToken"};
-		
-	public QuoteToken(Token... tokens) throws TokenFormatException {
-		super(tokens, QuoteToken.ALLOWED_TYPES);
+	public QuoteToken(Token... tokens) {
+		super(tokens);
 	}
 	
 	@Override
