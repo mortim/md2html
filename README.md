@@ -8,6 +8,8 @@ Un parser Markdown vers HTML très basique écrit en Java et basé sur [JavaFX](
 
 ### Commande de lancement
 
+La release de la dernière version du fichier JAR se trouve juste [ici](https://github.com/mortim/md2html/releases/tag/v1.0).
+
 ```
 java --module-path [CHEMIN_ABSOLU_DU_DOSSIER_LIB_DE_JAVAFX_17] --add-modules javafx.controls,javafx.web -jar md2html.jar
 ```
