@@ -23,8 +23,8 @@ Le programme ne suit pas à la lettre tous les standards de la page ci-dessus, i
 
 ### Commande de lancement
 
-La release de la dernière version du fichier JAR se trouve juste [ici](https://github.com/mortim/md2html/releases/tag/v2.0).
+La release de la dernière version du fichier JAR se trouve juste [ici](https://github.com/mortim/md2html/releases/tag/v2.0.1).
 
 ```
-java --module-path [CHEMIN_ABSOLU_DU_DOSSIER_LIB_DE_JAVAFX] --add-modules javafx.controls,javafx.web -jar md2html-v2.jar
+java --module-path [CHEMIN_ABSOLU_DU_DOSSIER_LIB_DE_JAVAFX] --add-modules javafx.controls,javafx.web -jar md2html-v2.0.1.jar
 ```
