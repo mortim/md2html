@@ -5,7 +5,8 @@ public class UnderlineToken extends Token {
 		super(tokens);
 	}
 	
-	public String getSymbol() {
-		return "u";
+	@Override
+	public String getSymbol(boolean closed) {
+		return closed ? "</u>" : "<u>";
 	}
 }

@@ -12,7 +12,8 @@ public class UnformattedTextToken extends Token {
 		return this.msg;
 	}
 	
-	public String getSymbol() { return ""; }
+	@Override
+	public String getSymbol(boolean closed) { return ""; }
 	
 	@Override
 	public String toHTML() {

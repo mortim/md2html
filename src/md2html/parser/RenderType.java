@@ -1,4 +1,4 @@
-package md2html.tokenizer;
+package md2html.parser;
 
 public enum RenderType {
 	AST,

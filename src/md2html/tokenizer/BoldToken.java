@@ -5,7 +5,8 @@ public class BoldToken extends Token {
 		super(tokens);
 	}
 	
-	public String getSymbol() {
-		return "b";
+	@Override
+	public String getSymbol(boolean closed) {
+		return closed ? "</b>" : "<b>";
 	}
 }

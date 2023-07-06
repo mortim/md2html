@@ -1,9 +1,10 @@
 package md2html.tokenizer;
 
-public class NewlineToken extends Token {
+public class SeparatorToken extends Token {
+
 	@Override
 	public String getSymbol(boolean closed) {
-		return "<br>";
+		return "<hr style=\"color: lightgrey\">";
 	}
 	
 	@Override

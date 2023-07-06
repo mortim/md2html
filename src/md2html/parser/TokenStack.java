@@ -33,10 +33,10 @@ public class TokenStack {
 	
 	public void merge() {
 		int nbElements = (this.tokens.size()-1)-this.idx.pop();
-		Stack<Token> tmp = new Stack<>();
+		Stack<Token> stack = new Stack<>();
 		for(int i = 0; i < nbElements; i++)
-			tmp.insertElementAt(this.tokens.pop(), 0);
-		this.tokens.peek().setTokens((Token[])tmp.toArray(new Token[tmp.size()]));
+			stack.insertElementAt(this.tokens.pop(), 0);
+		this.tokens.peek().addToken(stack);
 	}
 	
 	public void handle(Token token) {

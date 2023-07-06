@@ -6,7 +6,7 @@ public class ParagraphToken extends Token {
 	}
 
 	@Override
-	public String getSymbol() {
-		return "p";
+	public String getSymbol(boolean closed) {
+		return closed ? "</p>" : "<p>";
 	}
 }

@@ -5,7 +5,8 @@ public class ItalicToken extends Token {
 		super(tokens);
 	}
 	
-	public String getSymbol() {
-		return "i";
+	@Override
+	public String getSymbol(boolean closed) {
+		return closed ? "</i>" : "<i>";
 	}
 }
