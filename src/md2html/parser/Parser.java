@@ -272,14 +272,14 @@ public class Parser {
 						stack.handle(new UnderlineToken());
 					} catch(ConsumeTokenException e3) {
 						try {
-							stack.addToken(this.parseCode(TokenDisplay.INLINE));
-						} catch(ConsumeTokenException e4) {
+							stack.addToken(this.parseFootNote());
+						} catch(NumberFormatException | ConsumeTokenException e4) {
 							try {
-								stack.addToken(this.parseFootNote());
-							} catch(NumberFormatException | ConsumeTokenException e5) {
+								this.backtrack(this.source, this.initialSource);
+								stack.addToken(this.parseHyperlink());
+							} catch(ConsumeTokenException e5) {
 								try {
-									this.backtrack(this.source, this.initialSource);
-									stack.addToken(this.parseHyperlink());
+									stack.addToken(this.parseCode(TokenDisplay.INLINE));
 								} catch(ConsumeTokenException e6) {
 									stack.addToken(new UnformattedTextToken(this.parseUnformattedText(Parser.PARAGRAPH_DELIMITERS)));
 								}
